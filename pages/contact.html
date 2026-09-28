@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{@title.contact}}</title>
+<link rel="stylesheet" href="/css/style.css?v=__VERSION__">
+</head>
+<body>
+
+<!-- header -->
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@nav.contact}}</h2>
+      <p>{{@contact_p}}</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="icon">📞</div>
+        <h3>{{@contact_phone_title}}</h3>
+        <p>400-888-9527</p>
+        <p>{{@contact_phone_hours}}</p>
+      </div>
+      <div class="contact-card">
+        <div class="icon">📧</div>
+        <h3>{{@contact_email_title}}</h3>
+        <p>contact@futuremindtrain.com</p>
+        <p>{{@contact_email_hours}}</p>
+      </div>
+      <div class="contact-card">
+        <div class="icon">📍</div>
+        <h3>{{@contact_address_title}}</h3>
+        <p>{{@contact_address}}</p>
+        <p>{{@contact_address_subway}}</p>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:var(--space-3xl)">
+      <div>
+        <h2 style="font-family:var(--font-heading);font-size:24px;font-weight:600;margin-bottom:var(--space-lg)">{{@contact_form_title}}</h2>
+        <form data-form-type="contact">
+          <div class="form-group">
+            <label for="name">{{@form_name_label}}</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="{{@form_name_placeholder}}" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">{{@form_phone_label}}</label>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="{{@form_phone_placeholder}}" required>
+          </div>
+          <div class="form-group">
+            <label for="email">{{@form_email_label}}</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="{{@form_email_placeholder}}">
+          </div>
+          <div class="form-group">
+            <label for="course">{{@form_course_label}}</label>
+            <select id="course" name="course" class="form-control">
+              <option value="">{{@form_select_default}}</option>
+              <option value="ai">{{@c1_h3}}</option>
+              <option value="fullstack">{{@c2_h3}}</option>
+              <option value="security">{{@c3_h3}}</option>
+              <option value="bigdata">{{@c4_h3}}</option>
+              <option value="cloud">{{@c5_h3}}</option>
+              <option value="java">{{@c6_h3}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">{{@form_message_label}}</label>
+            <textarea id="message" name="message" class="form-control" placeholder="{{@form_message_placeholder}}"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%">{{@form_contact_submit}}</button>
+        </form>
+      </div>
+      <div>
+        <h2 style="font-family:var(--font-heading);font-size:24px;font-weight:600;margin-bottom:var(--space-lg)">{{@contact_why_title}}</h2>
+        <div class="feature-card" style="text-align:left;margin-bottom:var(--space-md)">
+          <h3>{{@contact_feat1_h3}}</h3>
+          <p>{{@contact_feat1_p}}</p>
+        </div>
+        <div class="feature-card" style="text-align:left;margin-bottom:var(--space-md)">
+          <h3>{{@contact_feat2_h3}}</h3>
+          <p>{{@contact_feat2_p}}</p>
+        </div>
+        <div class="feature-card" style="text-align:left;margin-bottom:var(--space-md)">
+          <h3>{{@contact_feat3_h3}}</h3>
+          <p>{{@contact_feat3_p}}</p>
+        </div>
+        <div class="feature-card" style="text-align:left">
+          <h3>{{@contact_feat4_h3}}</h3>
+          <p>{{@contact_feat4_p}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <h4>{{@footer_intro}}</h4>
+      <p>{{@site_intro}}</p>
+    </div>
+    <div>
+      <h4>{{@footer_quick}}</h4>
+      <p><a href="/">{{@nav.home}}</a><br><a href="/courses">{{@nav.courses}}</a><br><a href="/pricing">{{@nav.pricing}}</a><br><a href="/classes">{{@nav.classes}}</a><br><a href="/tutorials">{{@nav.tutorials}}</a><br><a href="/about">{{@nav.about}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_more}}</h4>
+      <p><a href="/community">{{@nav.community}}</a><br><a href="/news">{{@nav.news}}</a><br><a href="/contact">{{@nav.contact}}</a><br><a href="/faq">{{@nav.faq}}</a><br><a href="/apply">{{@nav.apply}}</a><br><a href="/student/login">{{@nav.student_login}}</a><br><a href="/staff/login">{{@nav.staff_login}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_contact}}</h4>
+      <p>{{@footer_contact_info}}</p>
+    </div>
+  </div>
+  <div class="footer-bottom">{{@footer_bottom}}</div>
+</footer>
+
+</body>
+</html>

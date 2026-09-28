@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+/public/build/
+/public/hot
+/storage/*.key
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files (never commit real credentials)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+storage/logs/*
+
+# Cache
+bootstrap/cache/*.php
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+
+# Testing
+.phpunit.result.cache
+coverage/
+
+# Misc
+*.diff
+*.orig

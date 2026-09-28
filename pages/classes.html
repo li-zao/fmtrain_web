@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{@title.classes}}</title>
+<link rel="stylesheet" href="/css/style.css?v=__VERSION__">
+</head>
+<body>
+
+<!-- header -->
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@nav.classes}}</h2>
+      <p>{{@classes_p}}</p>
+    </div>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>{{@th_course}}</th>
+            <th>{{@th_type}}</th>
+            <th>{{@th_date}}</th>
+            <th>{{@th_schedule}}</th>
+            <th>{{@th_seats}}</th>
+            <th>{{@th_action}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{@c1_h3}}</td>
+            <td><span class="badge badge-primary">{{@p_plan2_name}}</span></td>
+            <td>{{@cls_date_1}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_8}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'ai',classType:'advanced',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c2_h3}}</td>
+            <td><span class="badge badge-primary">{{@p_plan2_name}}</span></td>
+            <td>{{@cls_date_2}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-warning">{{@cls_seats_3}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'fullstack',classType:'advanced',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c3_h3}}</td>
+            <td><span class="badge badge-success">{{@p_plan1_name}}</span></td>
+            <td>{{@cls_date_3}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_12}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'security',classType:'basic',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c4_h3}}</td>
+            <td><span class="badge badge-primary">{{@p_plan2_name}}</span></td>
+            <td>{{@cls_date_4}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_15}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'bigdata',classType:'advanced',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c5_h3}}</td>
+            <td><span class="badge badge-success">{{@p_plan1_name}}</span></td>
+            <td>{{@cls_date_5}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_10}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'frontend',classType:'basic',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c6_h3}}</td>
+            <td><span class="badge badge-primary">{{@p_plan2_name}}</span></td>
+            <td>{{@cls_date_6}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_10}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'java',classType:'advanced',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c7_h3}}</td>
+            <td><span class="badge badge-primary">{{@p_plan2_name}}</span></td>
+            <td>{{@cls_date_7}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_6}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'robot',classType:'advanced',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c8_h3}}</td>
+            <td><span class="badge badge-primary">{{@p_plan2_name}}</span></td>
+            <td>{{@cls_date_8}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_8}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'embedded',classType:'advanced',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c9_h3}}</td>
+            <td><span class="badge badge-success">{{@p_plan1_name}}</span></td>
+            <td>{{@cls_date_9}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_15}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'testing',classType:'basic',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c10_h3}}</td>
+            <td><span class="badge badge-warning">{{@p_plan3_name}}</span></td>
+            <td>{{@cls_date_10}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_5}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'aiops',classType:'elite',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c11_h3}}</td>
+            <td><span class="badge badge-success">{{@p_plan1_name}}</span></td>
+            <td>{{@cls_date_11}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_20}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'design',classType:'basic',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+          <tr>
+            <td>{{@c12_h3}}</td>
+            <td><span class="badge badge-primary">{{@p_plan2_name}}</span></td>
+            <td>{{@cls_date_12}}</td>
+            <td>{{@cls_schedule}}</td>
+            <td><span class="badge badge-success">{{@cls_seats_12}}</span></td>
+            <td><a href="/apply" class="btn btn-primary" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'harmony',classType:'advanced',timestamp:Date.now()}))">{{@cls_btn_enroll}}</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-2xl);color:var(--text-light);font-size:14px">
+      <p>{{@classes_footer_note}}</p>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <h1>{{@banner_classes_h1}}</h1>
+  <p>{{@banner_classes_p}}</p>
+  <div class="hero-btns">
+    <a href="/apply" class="btn btn-white btn-lg">{{@btn_apply}}</a>
+    <a href="/contact" class="btn btn-outline-white btn-lg">{{@btn_trial}}</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <h4>{{@footer_intro}}</h4>
+      <p>{{@site_intro}}</p>
+    </div>
+    <div>
+      <h4>{{@footer_quick}}</h4>
+      <p><a href="/">{{@nav.home}}</a><br><a href="/courses">{{@nav.courses}}</a><br><a href="/pricing">{{@nav.pricing}}</a><br><a href="/classes">{{@nav.classes}}</a><br><a href="/tutorials">{{@nav.tutorials}}</a><br><a href="/about">{{@nav.about}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_more}}</h4>
+      <p><a href="/community">{{@nav.community}}</a><br><a href="/news">{{@nav.news}}</a><br><a href="/contact">{{@nav.contact}}</a><br><a href="/faq">{{@nav.faq}}</a><br><a href="/apply">{{@nav.apply}}</a><br><a href="/student/login">{{@nav.student_login}}</a><br><a href="/staff/login">{{@nav.staff_login}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_contact}}</h4>
+      <p>{{@footer_contact_info}}</p>
+    </div>
+  </div>
+  <div class="footer-bottom">{{@footer_bottom}}</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{@title.apply}}</title>
+<link rel="stylesheet" href="/css/style.css?v=__VERSION__">
+</head>
+<body>
+
+<!-- header -->
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@nav.apply}}</h2>
+      <p>{{@apply_p}}</p>
+    </div>
+
+    <div class="step-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-label">{{@step_fill}}</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-label">{{@step_consult}}</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-label">{{@step_trial}}</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-label">{{@step_confirm}}</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">5</div>
+        <div class="step-label">{{@step_start}}</div>
+      </div>
+    </div>
+
+    <div class="apply-form-box">
+      <form data-form-type="apply">
+        <div class="form-group">
+          <label for="name">{{@form_name_req}}</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="{{@form_realname_placeholder}}" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">{{@form_phone_req}}</label>
+          <input type="tel" id="phone" name="phone" class="form-control" placeholder="{{@form_phone_placeholder}}" required>
+        </div>
+        <div class="form-group">
+          <label for="email">{{@form_email_label}}</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="{{@form_email_placeholder}}">
+        </div>
+        <div class="form-group">
+          <label for="course">{{@form_course_req}}</label>
+          <select id="course" name="course" class="form-control" required>
+            <option value="">{{@form_course_default}}</option>
+            <option value="ai">{{@c1_h3}}</option>
+            <option value="fullstack">{{@c2_h3}}</option>
+            <option value="security">{{@c3_h3}}</option>
+            <option value="bigdata">{{@c4_h3}}</option>
+            <option value="frontend">{{@c5_h3}}</option>
+            <option value="java">{{@c6_h3}}</option>
+            <option value="robot">{{@c7_h3}}</option>
+            <option value="embedded">{{@c8_h3}}</option>
+            <option value="testing">{{@c9_h3}}</option>
+            <option value="aiops">{{@c10_h3}}</option>
+            <option value="design">{{@c11_h3}}</option>
+            <option value="harmony">{{@c12_h3}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="class-type">{{@form_classtype_req}}</label>
+          <select id="class-type" name="class-type" class="form-control" required>
+            <option value="">{{@form_classtype_default}}</option>
+            <option value="basic">{{@form_plan1}}</option>
+            <option value="advanced">{{@form_plan2}}</option>
+            <option value="elite">{{@form_plan3}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="education">{{@form_education_label}}</label>
+          <select id="education" name="education" class="form-control">
+            <option value="">{{@form_select_default}}</option>
+            <option value="high-school">{{@edu_highschool}}</option>
+            <option value="college">{{@edu_college}}</option>
+            <option value="bachelor">{{@edu_bachelor}}</option>
+            <option value="master">{{@edu_master}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="experience">{{@form_experience_label}}</label>
+          <select id="experience" name="experience" class="form-control">
+            <option value="">{{@form_select_default}}</option>
+            <option value="none">{{@exp_none}}</option>
+            <option value="basic">{{@exp_basic}}</option>
+            <option value="intermediate">{{@exp_intermediate}}</option>
+            <option value="advanced">{{@exp_advanced}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="expect">{{@form_expect_label}}</label>
+          <select id="expect" name="expect" class="form-control">
+            <option value="">{{@form_select_default}}</option>
+            <option value="now">{{@expect_now}}</option>
+            <option value="oct">{{@expect_oct}}</option>
+            <option value="nov">{{@expect_nov}}</option>
+            <option value="dec">{{@expect_dec}}</option>
+            <option value="later">{{@expect_later}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">{{@form_note_label}}</label>
+          <textarea id="message" name="message" class="form-control" placeholder="{{@form_note_placeholder}}"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%">{{@form_apply_submit}}</button>
+        <p style="text-align:center;margin-top:var(--space-md);font-size:13px;color:var(--text-light)">{{@apply_privacy}}</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <h4>{{@footer_intro}}</h4>
+      <p>{{@site_intro}}</p>
+    </div>
+    <div>
+      <h4>{{@footer_quick}}</h4>
+      <p><a href="/">{{@nav.home}}</a><br><a href="/courses">{{@nav.courses}}</a><br><a href="/pricing">{{@nav.pricing}}</a><br><a href="/classes">{{@nav.classes}}</a><br><a href="/tutorials">{{@nav.tutorials}}</a><br><a href="/about">{{@nav.about}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_more}}</h4>
+      <p><a href="/community">{{@nav.community}}</a><br><a href="/news">{{@nav.news}}</a><br><a href="/contact">{{@nav.contact}}</a><br><a href="/faq">{{@nav.faq}}</a><br><a href="/apply">{{@nav.apply}}</a><br><a href="/student/login">{{@nav.student_login}}</a><br><a href="/staff/login">{{@nav.staff_login}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_contact}}</h4>
+      <p>{{@footer_contact_info}}</p>
+    </div>
+  </div>
+  <div class="footer-bottom">{{@footer_bottom}}</div>
+</footer>
+
+<script>
+// 读取跳转前保存的报名数据（课程+班型），48小时内有效
+(function() {
+  var raw = localStorage.getItem('enroll_data');
+  if (!raw) return;
+  try {
+    var data = JSON.parse(raw);
+    // 48小时过期校验
+    var EXPIRY = 48 * 60 * 60 * 1000;
+    if (Date.now() - data.timestamp > EXPIRY) {
+      localStorage.removeItem('enroll_data');
+      return;
+    }
+    if (data.course) {
+      document.getElementById('course').value = data.course;
+    }
+    if (data.classType) {
+      document.getElementById('class-type').value = data.classType;
+    }
+  } catch(e) {
+    localStorage.removeItem('enroll_data');
+  }
+})();
+</script>
+</body>
+</html>

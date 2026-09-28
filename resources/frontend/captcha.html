@@ -1,0 +1,4 @@
+<div class="captcha-row">
+          <input type="text" id="captcha" name="captcha" class="form-control captcha-input" placeholder="验证码" required autocomplete="off" maxlength="4" style="flex:1;min-width:0;height:42px">
+          <img src="{{CAPTCHA_SRC}}" class="captcha-img" onclick="this.src='{{CAPTCHA_SRC}}?'+Math.random()" alt="验证码" title="点击刷新">
+        </div>

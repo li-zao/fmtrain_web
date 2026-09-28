@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{@title.index}}</title>
+<link rel="stylesheet" href="/css/style.css?v=__VERSION__">
+</head>
+<body>
+
+<!-- header -->
+
+<!-- Hero Carousel -->
+<section class="hero-carousel">
+    <div class="hero-carousel-inner" id="heroCarousel">
+        <!-- Slide 1: AI大模型 -->
+        <div class="hero-slide hero-slide-1">
+            <div class="hero-slide-content">
+                <div class="hero-slide-text">
+                    <h1>{{@slide_1_h1}}</h1>
+                    <p>{{@slide_1_p}}</p>
+                    <div class="hero-btns">
+                        <a href="/courses" class="btn btn-white btn-lg">{{@slide_1_btn1}}</a>
+                        <a href="/apply" class="btn btn-outline-white btn-lg">{{@slide_1_btn2}}</a>
+                    </div>
+                </div>
+                <div class="hero-slide-visual">
+                    <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="50" y="80" width="300" height="180" rx="12" fill="rgba(255,255,255,0.15)"/>
+                        <rect x="70" y="100" width="120" height="8" rx="4" fill="rgba(255,255,255,0.6)"/>
+                        <rect x="70" y="120" width="200" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+                        <rect x="70" y="136" width="180" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+                        <rect x="70" y="160" width="80" height="32" rx="16" fill="rgba(255,255,255,0.8)"/>
+                        <circle cx="300" cy="100" r="40" fill="rgba(255,255,255,0.2)"/>
+                        <path d="M290 100l10 10 20-20" stroke="rgba(255,255,255,0.8)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="100" cy="220" r="20" fill="rgba(255,255,255,0.2)"/>
+                        <circle cx="160" cy="220" r="20" fill="rgba(255,255,255,0.2)"/>
+                        <circle cx="220" cy="220" r="20" fill="rgba(255,255,255,0.2)"/>
+                        <path d="M95 220l5 5 10-10M155 220l5 5 10-10M215 220l5 5 10-10" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 2: 就业季 -->
+        <div class="hero-slide hero-slide-2">
+            <div class="hero-slide-content">
+                <div class="hero-slide-text">
+                    <h1>{{@slide_2_h1}}</h1>
+                    <p>{{@slide_2_p}}</p>
+                    <div class="hero-btns">
+                        <a href="/community" class="btn btn-white btn-lg">{{@slide_2_btn1}}</a>
+                        <a href="/apply" class="btn btn-outline-white btn-lg">{{@slide_2_btn2}}</a>
+                    </div>
+                </div>
+                <div class="hero-slide-visual">
+                    <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="80" y="60" width="240" height="160" rx="12" fill="rgba(255,255,255,0.15)"/>
+                        <rect x="100" y="80" width="80" height="8" rx="4" fill="rgba(255,255,255,0.6)"/>
+                        <rect x="100" y="100" width="160" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+                        <rect x="100" y="116" width="140" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+                        <rect x="100" y="140" width="100" height="32" rx="16" fill="rgba(255,255,255,0.8)"/>
+                        <rect x="100" y="180" width="200" height="2" fill="rgba(255,255,255,0.2)"/>
+                        <rect x="100" y="190" width="120" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
+                        <circle cx="320" cy="200" r="30" fill="rgba(255,255,255,0.2)"/>
+                        <path d="M310 200l8 8 16-16" stroke="rgba(255,255,255,0.8)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 3: 免费体验课 -->
+        <div class="hero-slide hero-slide-3">
+            <div class="hero-slide-content">
+                <div class="hero-slide-text">
+                    <h1>{{@slide_3_h1}}</h1>
+                    <p>{{@slide_3_p}}</p>
+                    <div class="hero-btns">
+                        <a href="/tutorials" class="btn btn-white btn-lg">{{@slide_3_btn1}}</a>
+                        <a href="/apply" class="btn btn-outline-white btn-lg">{{@slide_3_btn2}}</a>
+                    </div>
+                </div>
+                <div class="hero-slide-visual">
+                    <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="60" y="70" width="280" height="180" rx="12" fill="rgba(255,255,255,0.15)"/>
+                        <rect x="80" y="90" width="100" height="8" rx="4" fill="rgba(255,255,255,0.6)"/>
+                        <rect x="80" y="110" width="200" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+                        <rect x="80" y="126" width="180" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+                        <rect x="80" y="150" width="120" height="40" rx="8" fill="rgba(255,255,255,0.2)"/>
+                        <rect x="90" y="160" width="60" height="6" rx="3" fill="rgba(255,255,255,0.6)"/>
+                        <rect x="90" y="172" width="80" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+                        <circle cx="300" cy="170" r="35" fill="rgba(255,255,255,0.2)"/>
+                        <path d="M290 170l8 8 16-16" stroke="rgba(255,255,255,0.8)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="120" cy="220" r="15" fill="rgba(255,255,255,0.15)"/>
+                        <circle cx="180" cy="220" r="15" fill="rgba(255,255,255,0.15)"/>
+                        <circle cx="240" cy="220" r="15" fill="rgba(255,255,255,0.15)"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="hero-arrow hero-arrow-left" onclick="prevSlide()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+        </svg>
+    </button>
+    <button class="hero-arrow hero-arrow-right" onclick="nextSlide()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+        </svg>
+    </button>
+    <div class="hero-dots">
+        <button class="hero-dot active" onclick="goToSlide(0)"></button>
+        <button class="hero-dot" onclick="goToSlide(1)"></button>
+        <button class="hero-dot" onclick="goToSlide(2)"></button>
+    </div>
+</section>
+
+<section class="stats">
+  <div class="stat-item">
+    <div class="stat-num">10,000+</div>
+    <div class="stat-label">{{@stat_1}}</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">98.6%</div>
+    <div class="stat-label">{{@stat_2}}</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">200+</div>
+    <div class="stat-label">{{@stat_3}}</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">{{@stat_years}}</div>
+    <div class="stat-label">{{@stat_4}}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@why_h2}}</h2>
+      <p>{{@why_p}}</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="20" stroke="#2563eb" stroke-width="2" fill="rgba(37,99,235,0.1)"/>
+            <circle cx="24" cy="24" r="12" stroke="#2563eb" stroke-width="2" fill="rgba(37,99,235,0.15)"/>
+            <circle cx="24" cy="24" r="4" fill="#2563eb"/>
+            <path d="M24 4v6M24 38v6M4 24h6M38 24h6" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>{{@why1_h3}}</h3>
+        <p>{{@why1_p}}</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="16" r="8" stroke="#f97316" stroke-width="2" fill="rgba(249,115,22,0.1)"/>
+            <path d="M12 36c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#f97316" stroke-width="2" fill="rgba(249,115,22,0.1)"/>
+          </svg>
+        </div>
+        <h3>{{@why2_h3}}</h3>
+        <p>{{@why2_p}}</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="18" width="32" height="22" rx="3" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.1)"/>
+            <path d="M16 18v-4a8 8 0 0116 0v4" stroke="#10b981" stroke-width="2"/>
+            <path d="M24 28v6M21 31h6" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="38" cy="14" r="6" fill="#10b981"/>
+            <path d="M36 14l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>{{@why3_h3}}</h3>
+        <p>{{@why3_p}}</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8v8M24 32v8M8 24h8M32 24h8" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="24" cy="24" r="8" stroke="#6366f1" stroke-width="2" fill="rgba(99,102,241,0.1)"/>
+            <path d="M18 18l-4-4M30 30l4 4M30 18l4-4M18 30l-4 4" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="24" cy="24" r="3" fill="#6366f1"/>
+          </svg>
+        </div>
+        <h3>{{@why4_h3}}</h3>
+        <p>{{@why4_p}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section animate-on-scroll">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@course_h2}}</h2>
+      <p>{{@course_p}}</p>
+    </div>
+    <div class="course-grid">
+      <!-- AI大模型 -->
+      <div class="course-card animate-on-scroll">
+        <div class="course-card-icon ai">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="30" fill="rgba(37,99,235,0.15)"/>
+            <path d="M40 20v40M20 40h40" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="40" cy="40" r="8" fill="#2563eb"/>
+            <circle cx="40" cy="40" r="4" fill="#fff"/>
+            <path d="M28 28l24 24M52 28L28 52" stroke="#2563eb" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c1_h3}}</h3>
+          <p>{{@c1_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c1_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag hot">{{@tag_hot}}</span>
+            <span class="course-tag salary">{{@tag_salary}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_19800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 全栈Web -->
+      <div class="course-card animate-on-scroll">
+        <div class="course-card-icon web">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="20" width="50" height="35" rx="4" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2"/>
+            <path d="M25 60h30M30 55v5M50 55v5" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+            <path d="M25 30h30M25 35h20M25 40h25" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="55" cy="42" r="6" fill="#10b981"/>
+            <path d="M53 42l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c2_h3}}</h3>
+          <p>{{@c2_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c2_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@level_beginner}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag recommend">{{@tag_recommend}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_16800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 网络安全 -->
+      <div class="course-card animate-on-scroll">
+        <div class="course-card-icon security">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 15L20 25v15c0 12 8 20 20 25 12-5 20-13 20-25V25L40 15z" fill="rgba(249,115,22,0.15)" stroke="#f97316" stroke-width="2"/>
+            <path d="M34 40l4 4 8-8" stroke="#f97316" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c3_h3}}</h3>
+          <p>{{@c3_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c3_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag salary">{{@tag_salary}}</span>
+            <span class="course-tag new">{{@tag_new}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_18800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 大数据 -->
+      <div class="course-card animate-on-scroll">
+        <div class="course-card-icon data">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="40" cy="25" rx="20" ry="8" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="2"/>
+            <path d="M20 25v16c0 4.4 8.9 8 20 8s20-3.6 20-8V25" stroke="#6366f1" stroke-width="2"/>
+            <path d="M20 33c0 4.4 8.9 8 20 8s20-3.6 20-8" stroke="#6366f1" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c4_h3}}</h3>
+          <p>{{@c4_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c2_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag primary">{{@tag_new}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_17800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 前端开发 -->
+      <div class="course-card animate-on-scroll">
+        <div class="course-card-icon frontend">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14" y="16" width="52" height="42" rx="5" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" stroke-width="2"/>
+            <path d="M14 28h52" stroke="#8b5cf6" stroke-width="1.5"/>
+            <circle cx="22" cy="22" r="2.5" fill="#8b5cf6"/>
+            <circle cx="30" cy="22" r="2.5" fill="#8b5cf6" opacity="0.4"/>
+            <circle cx="38" cy="22" r="2.5" fill="#8b5cf6" opacity="0.4"/>
+            <path d="M27 50l-6-8 6-8M38 50l8-16M53 34l6 8-6 8" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c5_h3}}</h3>
+          <p>{{@c5_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c3_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@level_beginner}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag recommend">{{@tag_recommend}}</span>
+            <span class="course-tag hot">{{@tag_hot}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_14800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- Java后端 -->
+      <div class="course-card animate-on-scroll">
+        <div class="course-card-icon java">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" y="22" width="44" height="36" rx="5" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="2"/>
+            <circle cx="28" cy="30" r="3" fill="#ef4444"/>
+            <circle cx="38" cy="30" r="3" fill="#ef4444" opacity="0.6"/>
+            <circle cx="48" cy="30" r="3" fill="#ef4444" opacity="0.3"/>
+            <rect x="26" y="38" width="28" height="3" rx="1.5" fill="#ef4444" opacity="0.5"/>
+            <rect x="26" y="44" width="20" height="3" rx="1.5" fill="#ef4444" opacity="0.5"/>
+            <rect x="26" y="50" width="24" height="3" rx="1.5" fill="#ef4444" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c6_h3}}</h3>
+          <p>{{@c6_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c1_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag salary">{{@tag_salary}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_18800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:var(--space-2xl)">
+      <a href="/courses" class="btn btn-primary btn-lg">{{@view_all_courses}}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt animate-on-scroll">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@why2_h3}}</h2>
+      <p>{{@teacher_p}}</p>
+    </div>
+    <div class="teacher-grid">
+      <!-- 讲师1 -->
+      <div class="teacher-card animate-on-scroll">
+        <div class="teacher-avatar">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="36" fill="rgba(37,99,235,0.1)"/>
+            <circle cx="40" cy="32" r="12" fill="rgba(37,99,235,0.2)"/>
+            <path d="M20 60c0-11 9-20 20-20s20 9 20 20" fill="rgba(37,99,235,0.15)"/>
+            <circle cx="40" cy="32" r="8" stroke="#2563eb" stroke-width="2"/>
+            <path d="M24 58c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="#2563eb" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>{{@t1_name}}</h3>
+        <div class="title">{{@t1_title}}</div>
+        <p>{{@t1_p}}</p>
+        <div class="teacher-tags">
+          <span class="teacher-tag">{{@exp_12y}}</span>
+          <span class="teacher-tag">AI/ML</span>
+          <span class="teacher-tag">{{@tag_llm}}</span>
+        </div>
+      </div>
+      <!-- 讲师2 -->
+      <div class="teacher-card animate-on-scroll">
+        <div class="teacher-avatar">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="36" fill="rgba(249,115,22,0.1)"/>
+            <circle cx="40" cy="32" r="12" fill="rgba(249,115,22,0.2)"/>
+            <path d="M20 60c0-11 9-20 20-20s20 9 20 20" fill="rgba(249,115,22,0.15)"/>
+            <circle cx="40" cy="32" r="8" stroke="#f97316" stroke-width="2"/>
+            <path d="M24 58c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="#f97316" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>{{@t2_name}}</h3>
+        <div class="title">{{@t2_title}}</div>
+        <p>{{@t2_p}}</p>
+        <div class="teacher-tags">
+          <span class="teacher-tag">{{@exp_10y}}</span>
+          <span class="teacher-tag">Vue/React</span>
+          <span class="teacher-tag">{{@tag_fullstack}}</span>
+        </div>
+      </div>
+      <!-- 讲师3 -->
+      <div class="teacher-card animate-on-scroll">
+        <div class="teacher-avatar">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="36" fill="rgba(16,185,129,0.1)"/>
+            <circle cx="40" cy="32" r="12" fill="rgba(16,185,129,0.2)"/>
+            <path d="M20 60c0-11 9-20 20-20s20 9 20 20" fill="rgba(16,185,129,0.15)"/>
+            <circle cx="40" cy="32" r="8" stroke="#10b981" stroke-width="2"/>
+            <path d="M24 58c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="#10b981" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>{{@t3_name}}</h3>
+        <div class="title">{{@t3_title}}</div>
+        <p>{{@t3_p}}</p>
+        <div class="teacher-tags">
+          <span class="teacher-tag">{{@exp_8y}}</span>
+          <span class="teacher-tag">{{@tag_pentest}}</span>
+          <span class="teacher-tag">CVE</span>
+        </div>
+      </div>
+      <!-- 讲师4 -->
+      <div class="teacher-card animate-on-scroll">
+        <div class="teacher-avatar">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="36" fill="rgba(99,102,241,0.1)"/>
+            <circle cx="40" cy="32" r="12" fill="rgba(99,102,241,0.2)"/>
+            <path d="M20 60c0-11 9-20 20-20s20 9 20 20" fill="rgba(99,102,241,0.15)"/>
+            <circle cx="40" cy="32" r="8" stroke="#6366f1" stroke-width="2"/>
+            <path d="M24 58c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="#6366f1" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>{{@t4_name}}</h3>
+        <div class="title">{{@t4_title}}</div>
+        <p>{{@t4_p}}</p>
+        <div class="teacher-tags">
+          <span class="teacher-tag">{{@exp_11y}}</span>
+          <span class="teacher-tag">Hadoop</span>
+          <span class="teacher-tag">Spark</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- {{@succ_h2}} -->
+<section class="section animate-on-scroll">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@succ_h2}}</h2>
+      <p>{{@succ_p}}</p>
+    </div>
+    <div class="success-grid">
+      <!-- 学员1 -->
+      <div class="success-card">
+        <div class="success-header">
+          <div class="success-avatar">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" fill="rgba(37,99,235,0.1)"/>
+              <circle cx="24" cy="20" r="8" fill="rgba(37,99,235,0.2)"/>
+              <path d="M12 40c0-6.6 5.4-12 12-12s12 5.4 12 12" fill="rgba(37,99,235,0.15)"/>
+            </svg>
+          </div>
+          <div class="success-info">
+            <h3>{{@s1_name}}</h3>
+            <p>{{@s1_role}}</p>
+          </div>
+        </div>
+        <div class="success-company">
+          <div class="company-logo">
+            <svg viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="24" rx="4" fill="rgba(255,106,0,0.1)"/>
+              <text x="30" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#ff6a00">{{@company_ali}}</text>
+            </svg>
+          </div>
+          <span class="success-salary">{{@salary_22k}}</span>
+        </div>
+        <div class="success-quote">
+          "{{@s1_quote}}"
+        </div>
+      </div>
+      <!-- 学员2 -->
+      <div class="success-card">
+        <div class="success-header">
+          <div class="success-avatar">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" fill="rgba(249,115,22,0.1)"/>
+              <circle cx="24" cy="20" r="8" fill="rgba(249,115,22,0.2)"/>
+              <path d="M12 40c0-6.6 5.4-12 12-12s12 5.4 12 12" fill="rgba(249,115,22,0.15)"/>
+            </svg>
+          </div>
+          <div class="success-info">
+            <h3>{{@s2_name}}</h3>
+            <p>{{@s2_role}}</p>
+          </div>
+        </div>
+        <div class="success-company">
+          <div class="company-logo">
+            <svg viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="24" rx="4" fill="rgba(0,153,255,0.1)"/>
+              <text x="30" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#0099ff">{{@company_bytedance}}</text>
+            </svg>
+          </div>
+          <span class="success-salary">{{@salary_18k}}</span>
+        </div>
+        <div class="success-quote">
+          "{{@s2_quote}}"
+        </div>
+      </div>
+      <!-- 学员3 -->
+      <div class="success-card">
+        <div class="success-header">
+          <div class="success-avatar">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" fill="rgba(16,185,129,0.1)"/>
+              <circle cx="24" cy="20" r="8" fill="rgba(16,185,129,0.2)"/>
+              <path d="M12 40c0-6.6 5.4-12 12-12s12 5.4 12 12" fill="rgba(16,185,129,0.15)"/>
+            </svg>
+          </div>
+          <div class="success-info">
+            <h3>{{@s3_name}}</h3>
+            <p>{{@s3_role}}</p>
+          </div>
+        </div>
+        <div class="success-company">
+          <div class="company-logo">
+            <svg viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="24" rx="4" fill="rgba(255,0,0,0.1)"/>
+              <text x="30" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#ff0000">{{@company_jd}}</text>
+            </svg>
+          </div>
+          <span class="success-salary">{{@salary_20k}}</span>
+        </div>
+        <div class="success-quote">
+          "{{@s3_quote}}"
+        </div>
+      </div>
+      <!-- 学员4 -->
+      <div class="success-card">
+        <div class="success-header">
+          <div class="success-avatar">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" fill="rgba(99,102,241,0.1)"/>
+              <circle cx="24" cy="20" r="8" fill="rgba(99,102,241,0.2)"/>
+              <path d="M12 40c0-6.6 5.4-12 12-12s12 5.4 12 12" fill="rgba(99,102,241,0.15)"/>
+            </svg>
+          </div>
+          <div class="success-info">
+            <h3>{{@s4_name}}</h3>
+            <p>{{@s4_role}}</p>
+          </div>
+        </div>
+        <div class="success-company">
+          <div class="company-logo">
+            <svg viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="24" rx="4" fill="rgba(255,215,0,0.15)"/>
+              <text x="30" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#b8860b">{{@company_meituan}}</text>
+            </svg>
+          </div>
+          <span class="success-salary">{{@salary_16k}}</span>
+        </div>
+        <div class="success-quote">
+          "{{@s4_quote}}"
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- {{@stat_3}} -->
+<section class="section section-alt animate-on-scroll">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@stat_3}}</h2>
+      <p>{{@partner_p}}</p>
+    </div>
+    <div class="partner-grid">
+      <div class="partner-item">
+        <img src="../img/partner/alibaba.png" alt="{{@partner_1}}" class="partner-logo">
+        <span class="partner-name">{{@partner_1}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/qq.png" alt="{{@partner_2}}" class="partner-logo">
+        <span class="partner-name">{{@partner_2}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/bytedance.png" alt="{{@partner_3}}" class="partner-logo">
+        <span class="partner-name">{{@partner_3}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/baidu.png" alt="{{@partner_4}}" class="partner-logo">
+        <span class="partner-name">{{@partner_4}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/jd.png" alt="{{@partner_5}}" class="partner-logo">
+        <span class="partner-name">{{@partner_5}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/meituan.png" alt="{{@partner_6}}" class="partner-logo">
+        <span class="partner-name">{{@partner_6}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/huawei.png" alt="{{@partner_7}}" class="partner-logo">
+        <span class="partner-name">{{@partner_7}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/netease.png" alt="{{@partner_8}}" class="partner-logo">
+        <span class="partner-name">{{@partner_8}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/xiaomi.png" alt="{{@partner_9}}" class="partner-logo">
+        <span class="partner-name">{{@partner_9}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/didi.png" alt="{{@partner_10}}" class="partner-logo">
+        <span class="partner-name">{{@partner_10}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/kuaishou.png" alt="{{@partner_11}}" class="partner-logo">
+        <span class="partner-name">{{@partner_11}}</span>
+      </div>
+      <div class="partner-item">
+        <img src="../img/partner/pinduoduo.png" alt="{{@partner_12}}" class="partner-logo">
+        <span class="partner-name">{{@partner_12}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 新闻动态 -->
+<section class="section animate-on-scroll">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@nav.news}}</h2>
+      <p>{{@news_p}}</p>
+    </div>
+    <div class="news-grid">
+      <!-- 新闻1 -->
+      <div class="news-card animate-on-scroll">
+        <div class="news-card-image">
+          <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="rgba(37,99,235,0.05)"/>
+            <rect x="40" y="40" width="320" height="170" rx="8" fill="rgba(37,99,235,0.1)"/>
+            <circle cx="200" cy="125" r="40" fill="rgba(37,99,235,0.15)"/>
+            <path d="M185 125l10 10 20-20" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="60" y="60" width="120" height="8" rx="4" fill="rgba(37,99,235,0.2)"/>
+            <rect x="60" y="80" width="200" height="6" rx="3" fill="rgba(37,99,235,0.15)"/>
+          </svg>
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="news-date">2026-09-20</span>
+            <span class="news-category">{{@news_cat1}}</span>
+          </div>
+          <h3>{{@n1_h3}}</h3>
+          <p>{{@n1_p}}</p>
+          <a href="/news" class="news-link">{{@read_more}}</a>
+        </div>
+      </div>
+      <!-- 新闻2 -->
+      <div class="news-card animate-on-scroll">
+        <div class="news-card-image">
+          <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="rgba(249,115,22,0.05)"/>
+            <rect x="40" y="40" width="320" height="170" rx="8" fill="rgba(249,115,22,0.1)"/>
+            <circle cx="200" cy="125" r="40" fill="rgba(249,115,22,0.15)"/>
+            <path d="M180 125l15 15 25-25" stroke="#f97316" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="60" y="60" width="100" height="8" rx="4" fill="rgba(249,115,22,0.2)"/>
+            <rect x="60" y="80" width="180" height="6" rx="3" fill="rgba(249,115,22,0.15)"/>
+          </svg>
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="news-date">2026-09-18</span>
+            <span class="news-category">{{@news_cat2}}</span>
+          </div>
+          <h3>{{@n2_h3}}</h3>
+          <p>{{@n2_p}}</p>
+          <a href="/news" class="news-link">{{@read_more}}</a>
+        </div>
+      </div>
+      <!-- 新闻3 -->
+      <div class="news-card animate-on-scroll">
+        <div class="news-card-image">
+          <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="rgba(16,185,129,0.05)"/>
+            <rect x="40" y="40" width="320" height="170" rx="8" fill="rgba(16,185,129,0.1)"/>
+            <circle cx="200" cy="125" r="40" fill="rgba(16,185,129,0.15)"/>
+            <path d="M180 125l15 15 25-25" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="60" y="60" width="140" height="8" rx="4" fill="rgba(16,185,129,0.2)"/>
+            <rect x="60" y="80" width="160" height="6" rx="3" fill="rgba(16,185,129,0.15)"/>
+          </svg>
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="news-date">2026-09-15</span>
+            <span class="news-category">{{@news_cat3}}</span>
+          </div>
+          <h3>{{@n3_h3}}</h3>
+          <p>{{@n3_p}}</p>
+          <a href="/news" class="news-link">{{@read_more}}</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:var(--space-2xl)">
+      <a href="/news" class="btn btn-outline btn-lg">{{@view_all_news}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- 免费资源/引流模块 -->
+<section class="section section-alt animate-on-scroll">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@res_h2}}</h2>
+      <p>{{@res_p}}</p>
+    </div>
+    <div class="resource-grid">
+      <div class="resource-card animate-on-scroll">
+        <div class="resource-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="12" width="32" height="24" rx="4" stroke="#2563eb" stroke-width="2" fill="rgba(37,99,235,0.1)"/>
+            <path d="M20 20l8 4-8 4V20z" fill="#2563eb"/>
+          </svg>
+        </div>
+        <h3>{{@r1_h3}}</h3>
+        <p>{{@r1_p}}</p>
+        <a href="/apply" class="btn btn-primary btn-sm">{{@r1_btn}}</a>
+      </div>
+      <div class="resource-card animate-on-scroll">
+        <div class="resource-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4L4 14v20l20 10 20-10V14L24 4z" stroke="#f97316" stroke-width="2" fill="rgba(249,115,22,0.1)"/>
+            <path d="M4 14l20 10 20-10M24 24v20" stroke="#f97316" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>{{@r2_h3}}</h3>
+        <p>{{@r2_p}}</p>
+        <a href="/tutorials" class="btn btn-secondary btn-sm">{{@r2_btn}}</a>
+      </div>
+      <div class="resource-card animate-on-scroll">
+        <div class="resource-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="18" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.1)"/>
+            <path d="M18 24l4 4 8-8" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>{{@r3_h3}}</h3>
+        <p>{{@r3_p}}</p>
+        <a href="/tutorials" class="btn btn-outline btn-sm">{{@r3_btn}}</a>
+      </div>
+      <div class="resource-card animate-on-scroll">
+        <div class="resource-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 6v6M24 36v6M6 24h6M36 24h6" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="24" cy="24" r="10" stroke="#6366f1" stroke-width="2" fill="rgba(99,102,241,0.1)"/>
+            <path d="M20 24h8M24 20v8" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>{{@r4_h3}}</h3>
+        <p>{{@r4_p}}</p>
+        <a href="/contact" class="btn btn-outline btn-sm">{{@r4_btn}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <h1>{{@banner_h1}}</h1>
+  <p>{{@banner_p}}</p>
+  <div class="hero-btns">
+    <a href="/apply" class="btn btn-white btn-lg">{{@btn_apply}}</a>
+    <a href="/pricing" class="btn btn-outline-white btn-lg">{{@btn_pricing}}</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <h4>{{@footer_intro}}</h4>
+      <p>{{@site_intro}}</p>
+    </div>
+    <div>
+      <h4>{{@footer_quick}}</h4>
+      <p><a href="/">{{@nav.home}}</a><br><a href="/courses">{{@nav.courses}}</a><br><a href="/pricing">{{@nav.pricing}}</a><br><a href="/classes">{{@nav.classes}}</a><br><a href="/tutorials">{{@nav.tutorials}}</a><br><a href="/about">{{@nav.about}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_more}}</h4>
+      <p><a href="/community">{{@nav.community}}</a><br><a href="/news">{{@nav.news}}</a><br><a href="/contact">{{@nav.contact}}</a><br><a href="/faq">{{@nav.faq}}</a><br><a href="/apply">{{@nav.apply}}</a><br><a href="/student/login">{{@nav.student_login}}</a><br><a href="/staff/login">{{@nav.staff_login}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_contact}}</h4>
+      <p>{{@footer_contact_info}}</p>
+    </div>
+  </div>
+  <div class="footer-bottom">{{@footer_bottom}}</div>
+</footer>
+
+<script>
+// Hero Carousel
+let currentSlide = 0;
+const totalSlides = 3;
+let autoPlayTimer;
+
+function updateCarousel() {
+  const carousel = document.getElementById('heroCarousel');
+  if (carousel) {
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+  const dots = document.querySelectorAll('.hero-dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentSlide);
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  updateCarousel();
+  resetAutoPlay();
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  updateCarousel();
+  resetAutoPlay();
+}
+
+function goToSlide(index) {
+  currentSlide = index;
+  updateCarousel();
+  resetAutoPlay();
+}
+
+function startAutoPlay() {
+  autoPlayTimer = setInterval(nextSlide, 5000);
+}
+
+function resetAutoPlay() {
+  clearInterval(autoPlayTimer);
+  startAutoPlay();
+}
+
+// Initialize
+startAutoPlay();
+
+// Back to Top Button
+const backToTopBtn = document.getElementById('backToTop');
+if (backToTopBtn) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  });
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+// Scroll Animation - Intersection Observer
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => {
+  observer.observe(el);
+});
+
+// Floating Chat Button
+document.addEventListener('DOMContentLoaded', () => {
+  const chatBtn = document.getElementById('chatBtn');
+  const chatPanel = document.getElementById('chatPanel');
+  const chatClose = document.getElementById('chatClose');
+  const chatMessages = document.querySelector('.chat-messages');
+  const chatInput = document.getElementById('chatInput');
+  const chatSend = document.getElementById('chatSend');
+
+  if (!chatBtn || !chatPanel) return;
+
+  chatBtn.addEventListener('click', () => {
+    chatPanel.classList.toggle('active');
+    if (chatPanel.classList.contains('active')) {
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      chatInput.focus();
+    }
+  });
+
+  chatClose.addEventListener('click', () => {
+    chatPanel.classList.remove('active');
+  });
+
+  // Close chat panel when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!chatPanel.contains(e.target) && e.target !== chatBtn) {
+      chatPanel.classList.remove('active');
+    }
+  });
+
+  // Send message
+  function sendMessage() {
+    const text = chatInput.value.trim();
+    if (!text) return;
+
+    const userMsg = document.createElement('div');
+    userMsg.className = 'chat-msg user';
+    userMsg.innerHTML = '<div class="chat-msg-text">' + text + '</div>';
+    chatMessages.appendChild(userMsg);
+
+    chatInput.value = '';
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    setTimeout(() => {
+      const botMsg = document.createElement('div');
+      botMsg.className = 'chat-msg bot';
+      botMsg.innerHTML = '<div class="chat-msg-avatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="chat-msg-text">当前咨询人数过多，排队中...</div>';
+      chatMessages.appendChild(botMsg);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }, 1000);
+  }
+
+  chatSend.addEventListener('click', sendMessage);
+
+  chatInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      sendMessage();
+    }
+  });
+});
+</script>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="back-to-top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<!-- Floating Chat Button -->
+<button id="chatBtn" class="chat-btn">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  </svg>
+  <span class="chat-badge">1</span>
+</button>
+
+<!-- Chat Panel -->
+<div id="chatPanel" class="chat-panel">
+  <div class="chat-header">
+    <h4>{{@chat_title}}</h4>
+    <button id="chatClose">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <div class="chat-body">
+    <div class="chat-messages">
+      <div class="chat-msg bot">
+        <div class="chat-msg-avatar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <div class="chat-msg-text">15年在线教育品牌值得信赖，欢迎报名未来思维培训学院<br><br>您好，这里是您的学习规划师，欢迎您咨询~<br><br>可以告诉我您的基础情况、学习需求，我来为您制定专属的学习规划~</div>
+      </div>
+    </div>
+  </div>
+  <div class="chat-footer">
+    <div class="chat-input-wrap">
+      <input type="text" id="chatInput" class="chat-input" placeholder="输入消息..." autocomplete="off">
+      <button id="chatSend" class="chat-send-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+          <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

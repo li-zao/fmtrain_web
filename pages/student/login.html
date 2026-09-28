@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{@title.student_login}}</title>
+<link rel="stylesheet" href="/css/style.css?v=__VERSION__">
+</head>
+<body>
+
+<!-- header -->
+
+<section class="section">
+  <div class="container">
+    <div class="login-box">
+      <h2>{{@nav.student_login}}</h2>
+      <form data-form-type="student-login">
+        <div class="form-group">
+          <label for="student-id">学号 / 手机号</label>
+          <input type="text" id="student-id" name="student-id" class="form-control" placeholder="请输入学号或手机号" required>
+        </div>
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="请输入密码" required>
+        </div>
+        <!-- captcha -->
+        <div class="form-group" style="display:flex;justify-content:space-between;align-items:center">
+          <label style="margin:0;display:flex;align-items:center;gap:8px;font-size:14px">
+            <input type="checkbox" name="remember"> 记住我
+          </label>
+          <a href="/contact" style="font-size:14px">忘记密码？</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%">登录</button>
+      </form>
+      <p style="text-align:center;margin-top:var(--space-lg);font-size:14px;color:var(--text-light)">
+        还没有账号？<a href="/apply">立即报名</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <h4>{{@footer_intro}}</h4>
+      <p>{{@site_intro}}</p>
+    </div>
+    <div>
+      <h4>{{@footer_quick}}</h4>
+      <p><a href="/">{{@nav.home}}</a><br><a href="/courses">{{@nav.courses}}</a><br><a href="/pricing">{{@nav.pricing}}</a><br><a href="/classes">{{@nav.classes}}</a><br><a href="/tutorials">{{@nav.tutorials}}</a><br><a href="/about">{{@nav.about}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_more}}</h4>
+      <p><a href="/community">{{@nav.community}}</a><br><a href="/news">{{@nav.news}}</a><br><a href="/contact">{{@nav.contact}}</a><br><a href="/faq">{{@nav.faq}}</a><br><a href="/apply">{{@nav.apply}}</a><br><a href="/student/login">{{@nav.student_login}}</a><br><a href="/staff/login">{{@nav.staff_login}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_contact}}</h4>
+      <p>{{@footer_contact_info}}</p>
+    </div>
+  </div>
+  <div class="footer-bottom">{{@footer_bottom}}</div>
+</footer>
+
+</body>
+</html>

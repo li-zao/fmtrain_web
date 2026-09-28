@@ -1,0 +1,44 @@
+<header class="header">
+    <div class="header-inner">
+        <a href="/" class="logo">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.1"/>
+                <path d="M16 6L8 10v12l8 4 8-4V10l-8-4z" fill="currentColor"/>
+                <path d="M16 6v20M8 10l8 4 8-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <div class="logo-text">
+                <span class="logo-main">{{@site_name}}</span>
+                <span class="logo-sub">{{@site_name_en}}</span>
+            </div>
+        </a>
+        <div class="header-actions">
+            <div class="header-search">
+                <input type="text" placeholder="{{@search_placeholder}}">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                </svg>
+            </div>
+            <a href="/student/login" class="header-btn header-btn-outline">{{@student_login_btn}}</a>
+            <a href="/apply" class="header-btn header-btn-trial">{{@free_trial_btn}}</a>
+            <a href="{{LANG_SWITCH_URL}}" class="header-btn header-btn-lang">{{LANG_SWITCH_LABEL}}</a>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="inner">
+        <ul>
+            <li><a href="/" class="{{ACTIVE_HOME}}">{{@nav.home}}</a></li>
+            <li><a href="/courses" class="{{ACTIVE_COURSES}}">{{@nav.courses}}</a></li>
+            <li><a href="/pricing" class="{{ACTIVE_PRICING}}">{{@nav.pricing}}</a></li>
+            <li><a href="/classes" class="{{ACTIVE_CLASSES}}">{{@nav.classes}}</a></li>
+            <li><a href="/tutorials" class="{{ACTIVE_TUTORIALS}}">{{@nav.tutorials}}</a></li>
+            <li><a href="/community" class="{{ACTIVE_COMMUNITY}}">{{@nav.community}}</a></li>
+            <li><a href="/news" class="{{ACTIVE_NEWS}}">{{@nav.news}}</a></li>
+            <li><a href="/about" class="{{ACTIVE_ABOUT}}">{{@nav.about}}</a></li>
+            <li><a href="/contact" class="{{ACTIVE_CONTACT}}">{{@nav.contact}}</a></li>
+            <li><a href="/faq" class="{{ACTIVE_FAQ}}">{{@nav.faq}}</a></li>
+            <li><a href="/apply" class="{{ACTIVE_APPLY}}">{{@nav.apply}}</a></li>
+        </ul>
+    </div>
+</nav>

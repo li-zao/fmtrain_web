@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{@title.pricing}}</title>
+<link rel="stylesheet" href="/css/style.css?v=__VERSION__">
+</head>
+<body>
+
+<!-- header -->
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@nav.pricing}}</h2>
+      <p>{{@pricing_p}}</p>
+    </div>
+
+    <div class="card-grid" style="grid-template-columns:repeat(3,1fr);max-width:960px;margin:0 auto">
+      <div class="price-card">
+        <h3>{{@p_plan1_name}}</h3>
+        <div class="price">{{@price_9800}}</div>
+        <p style="color:var(--text-light);font-size:14px;margin-bottom:16px">{{@p_plan1_desc}}</p>
+        <ul>
+          <li>{{@p_plan1_feat1}}</li>
+          <li>{{@p_plan1_feat2}}</li>
+          <li>{{@p_plan1_feat3}}</li>
+          <li>{{@p_plan1_feat4}}</li>
+          <li>{{@p_plan1_feat5}}</li>
+        </ul>
+        <a href="/apply" class="btn btn-outline" style="width:100%" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'',classType:'basic',timestamp:Date.now()}))">{{@p_plan1_btn}}</a>
+      </div>
+
+      <div class="price-card featured" data-badge="{{@pricing_featured_badge}}">
+        <h3>{{@p_plan2_name}}</h3>
+        <div class="price">{{@price_16800}}</div>
+        <p style="color:var(--text-light);font-size:14px;margin-bottom:16px">{{@p_plan2_desc}}</p>
+        <ul>
+          <li>{{@p_plan2_feat1}}</li>
+          <li>{{@p_plan2_feat2}}</li>
+          <li>{{@p_plan2_feat3}}</li>
+          <li>{{@p_plan2_feat4}}</li>
+          <li>{{@p_plan2_feat5}}</li>
+          <li>{{@p_plan2_feat6}}</li>
+        </ul>
+        <a href="/apply" class="btn btn-primary" style="width:100%" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'',classType:'advanced',timestamp:Date.now()}))">{{@p_plan2_btn}}</a>
+      </div>
+
+      <div class="price-card">
+        <h3>{{@p_plan3_name}}</h3>
+        <div class="price">{{@price_22800}}</div>
+        <p style="color:var(--text-light);font-size:14px;margin-bottom:16px">{{@p_plan3_desc}}</p>
+        <ul>
+          <li>{{@p_plan3_feat1}}</li>
+          <li>{{@p_plan3_feat2}}</li>
+          <li>{{@p_plan3_feat3}}</li>
+          <li>{{@p_plan3_feat4}}</li>
+          <li>{{@p_plan3_feat5}}</li>
+          <li>{{@p_plan3_feat6}}</li>
+        </ul>
+        <a href="/apply" class="btn btn-outline" style="width:100%" onclick="localStorage.setItem('enroll_data',JSON.stringify({course:'',classType:'elite',timestamp:Date.now()}))">{{@p_plan3_btn}}</a>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-2xl);color:var(--text-light);font-size:14px">
+      <p>{{@pricing_footer}}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@pricing_faq}}</h2>
+    </div>
+    <div class="card-grid" style="grid-template-columns:repeat(2,1fr)">
+      <div class="card">
+        <div class="card-body">
+          <h3>{{@faq1_q}}</h3>
+          <p>{{@faq1_a}}</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3>{{@faq2_q}}</h3>
+          <p>{{@faq2_a}}</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3>{{@faq3_q}}</h3>
+          <p>{{@faq3_a}}</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3>{{@faq4_q}}</h3>
+          <p>{{@faq4_a}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <h1>{{@banner_early_h1}}</h1>
+  <p>{{@banner_early_p}}</p>
+  <div class="hero-btns">
+    <a href="/apply" class="btn btn-white btn-lg">{{@btn_apply}}</a>
+    <a href="/contact" class="btn btn-outline-white btn-lg">{{@btn_consult}}</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <h4>{{@footer_intro}}</h4>
+      <p>{{@site_intro}}</p>
+    </div>
+    <div>
+      <h4>{{@footer_quick}}</h4>
+      <p><a href="/">{{@nav.home}}</a><br><a href="/courses">{{@nav.courses}}</a><br><a href="/pricing">{{@nav.pricing}}</a><br><a href="/classes">{{@nav.classes}}</a><br><a href="/tutorials">{{@nav.tutorials}}</a><br><a href="/about">{{@nav.about}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_more}}</h4>
+      <p><a href="/community">{{@nav.community}}</a><br><a href="/news">{{@nav.news}}</a><br><a href="/contact">{{@nav.contact}}</a><br><a href="/faq">{{@nav.faq}}</a><br><a href="/apply">{{@nav.apply}}</a><br><a href="/student/login">{{@nav.student_login}}</a><br><a href="/staff/login">{{@nav.staff_login}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_contact}}</h4>
+      <p>{{@footer_contact_info}}</p>
+    </div>
+  </div>
+  <div class="footer-bottom">{{@footer_bottom}}</div>
+</footer>
+
+</body>
+</html>

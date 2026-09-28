@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{@title.news}}</title>
+<link rel="stylesheet" href="/css/style.css?v=__VERSION__">
+</head>
+<body>
+
+<!-- header -->
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@nav.news}}</h2>
+      <p>{{@news_p}}</p>
+    </div>
+
+    <div class="card-grid" style="grid-template-columns:1fr">
+      <div class="news-item">
+        <div style="width:200px;height:130px;background:var(--primary-light);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:48px;flex-shrink:0">🎓</div>
+        <div>
+          <div class="date">{{@news_date_1}}</div>
+          <h3>{{@news1_h3}}</h3>
+          <p>{{@news1_p}}</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <div style="width:200px;height:130px;background:var(--secondary-light);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:48px;flex-shrink:0">🏆</div>
+        <div>
+          <div class="date">{{@news_date_2}}</div>
+          <h3>{{@news2_h3}}</h3>
+          <p>{{@news2_p}}</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <div style="width:200px;height:130px;background:var(--primary-light);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:48px;flex-shrink:0">🚀</div>
+        <div>
+          <div class="date">{{@news_date_3}}</div>
+          <h3>{{@news3_h3}}</h3>
+          <p>{{@news3_p}}</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <div style="width:200px;height:130px;background:var(--secondary-light);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:48px;flex-shrink:0">📊</div>
+        <div>
+          <div class="date">{{@news_date_4}}</div>
+          <h3>{{@news4_h3}}</h3>
+          <p>{{@news4_p}}</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <div style="width:200px;height:130px;background:var(--primary-light);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:48px;flex-shrink:0">🤝</div>
+        <div>
+          <div class="date">{{@news_date_5}}</div>
+          <h3>{{@news5_h3}}</h3>
+          <p>{{@news5_p}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <h4>{{@footer_intro}}</h4>
+      <p>{{@site_intro}}</p>
+    </div>
+    <div>
+      <h4>{{@footer_quick}}</h4>
+      <p><a href="/">{{@nav.home}}</a><br><a href="/courses">{{@nav.courses}}</a><br><a href="/pricing">{{@nav.pricing}}</a><br><a href="/classes">{{@nav.classes}}</a><br><a href="/tutorials">{{@nav.tutorials}}</a><br><a href="/about">{{@nav.about}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_more}}</h4>
+      <p><a href="/community">{{@nav.community}}</a><br><a href="/news">{{@nav.news}}</a><br><a href="/contact">{{@nav.contact}}</a><br><a href="/faq">{{@nav.faq}}</a><br><a href="/apply">{{@nav.apply}}</a><br><a href="/student/login">{{@nav.student_login}}</a><br><a href="/staff/login">{{@nav.staff_login}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_contact}}</h4>
+      <p>{{@footer_contact_info}}</p>
+    </div>
+  </div>
+  <div class="footer-bottom">{{@footer_bottom}}</div>
+</footer>
+
+</body>
+</html>

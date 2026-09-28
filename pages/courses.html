@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{@title.courses}}</title>
+<link rel="stylesheet" href="/css/style.css?v=__VERSION__">
+</head>
+<body>
+
+<!-- header -->
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{@nav.courses}}</h2>
+      <p>{{@courses_p}}</p>
+    </div>
+    <div class="course-grid">
+      <!-- 1. AI大模型开发 -->
+      <div class="course-card">
+        <div class="course-card-icon ai">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="30" fill="rgba(37,99,235,0.15)"/>
+            <path d="M40 20v40M20 40h40" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="40" cy="40" r="8" fill="#2563eb"/>
+            <circle cx="40" cy="40" r="4" fill="#fff"/>
+            <path d="M28 28l24 24M52 28L28 52" stroke="#2563eb" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c1_h3}}</h3>
+          <p>{{@c1_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c1_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag hot">{{@tag_hot}}</span>
+            <span class="course-tag salary">{{@tag_salary}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_19800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 2. {{@c2_h3}} -->
+      <div class="course-card">
+        <div class="course-card-icon web">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="20" width="50" height="35" rx="4" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2"/>
+            <path d="M25 60h30M30 55v5M50 55v5" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+            <path d="M25 30h30M25 35h20M25 40h25" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="55" cy="42" r="6" fill="#10b981"/>
+            <path d="M53 42l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c2_h3}}</h3>
+          <p>{{@c2_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c2_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@level_beginner}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag recommend">{{@tag_recommend}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_16800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 3. 网络安全 -->
+      <div class="course-card">
+        <div class="course-card-icon security">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 15L20 25v15c0 12 8 20 20 25 12-5 20-13 20-25V25L40 15z" fill="rgba(249,115,22,0.15)" stroke="#f97316" stroke-width="2"/>
+            <path d="M34 40l4 4 8-8" stroke="#f97316" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c3_h3}}</h3>
+          <p>{{@c3_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c3_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag salary">{{@tag_salary}}</span>
+            <span class="course-tag new">{{@tag_new}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_18800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 4. 大数据 -->
+      <div class="course-card">
+        <div class="course-card-icon data">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="40" cy="25" rx="20" ry="8" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="2"/>
+            <path d="M20 25v16c0 4.4 8.9 8 20 8s20-3.6 20-8V25" stroke="#6366f1" stroke-width="2"/>
+            <path d="M20 33c0 4.4 8.9 8 20 8s20-3.6 20-8" stroke="#6366f1" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c4_h3}}</h3>
+          <p>{{@c4_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c2_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag primary">{{@tag_new}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_17800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 5. 前端开发 -->
+      <div class="course-card">
+        <div class="course-card-icon frontend">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14" y="16" width="52" height="42" rx="5" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" stroke-width="2"/>
+            <path d="M14 28h52" stroke="#8b5cf6" stroke-width="1.5"/>
+            <circle cx="22" cy="22" r="2.5" fill="#8b5cf6"/>
+            <circle cx="30" cy="22" r="2.5" fill="#8b5cf6" opacity="0.4"/>
+            <circle cx="38" cy="22" r="2.5" fill="#8b5cf6" opacity="0.4"/>
+            <path d="M27 50l-6-8 6-8M38 50l8-16M53 34l6 8-6 8" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c5_h3}}</h3>
+          <p>{{@c5_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c3_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@level_beginner}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag recommend">{{@tag_recommend}}</span>
+            <span class="course-tag hot">{{@tag_hot}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_14800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 6. Java后端 -->
+      <div class="course-card">
+        <div class="course-card-icon java">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" y="22" width="44" height="36" rx="5" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="2"/>
+            <circle cx="28" cy="30" r="3" fill="#ef4444"/>
+            <circle cx="38" cy="30" r="3" fill="#ef4444" opacity="0.6"/>
+            <circle cx="48" cy="30" r="3" fill="#ef4444" opacity="0.3"/>
+            <rect x="26" y="38" width="28" height="3" rx="1.5" fill="#ef4444" opacity="0.5"/>
+            <rect x="26" y="44" width="20" height="3" rx="1.5" fill="#ef4444" opacity="0.5"/>
+            <rect x="26" y="50" width="24" height="3" rx="1.5" fill="#ef4444" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c6_h3}}</h3>
+          <p>{{@c6_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c1_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag salary">{{@tag_salary}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_18800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 7. {{@c7_h3}} -->
+      <div class="course-card">
+        <div class="course-card-icon robot">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="30" width="40" height="30" rx="6" fill="rgba(14,165,233,0.15)" stroke="#0ea5e9" stroke-width="2"/>
+            <circle cx="32" cy="42" r="5" fill="#0ea5e9"/>
+            <circle cx="48" cy="42" r="5" fill="#0ea5e9"/>
+            <path d="M32 52h16" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"/>
+            <path d="M40 15v10" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="40" cy="13" r="3" fill="#0ea5e9"/>
+            <path d="M15 42h5M60 42h5" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c7_h3}}</h3>
+          <p>{{@c7_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c1_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag hot">{{@tag_hot}}</span>
+            <span class="course-tag new">{{@tag_new}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_21800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 8. {{@c8_h3}} -->
+      <div class="course-card">
+        <div class="course-card-icon embedded">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" width="40" height="40" rx="4" fill="rgba(34,197,94,0.15)" stroke="#22c55e" stroke-width="2"/>
+            <rect x="30" y="30" width="20" height="20" rx="2" fill="rgba(34,197,94,0.3)" stroke="#22c55e" stroke-width="2"/>
+            <path d="M40 12v8M40 60v8M12 40h8M60 40h8" stroke="#22c55e" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="40" cy="40" r="4" fill="#22c55e"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c8_h3}}</h3>
+          <p>{{@c8_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c1_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag new">{{@tag_new}}</span>
+            <span class="course-tag salary">{{@tag_salary}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_20800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 9. AI测试 -->
+      <div class="course-card">
+        <div class="course-card-icon testing">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 15L20 25v15c0 12 8 20 20 25 12-5 20-13 20-25V25L40 15z" fill="rgba(236,72,153,0.15)" stroke="#ec4899" stroke-width="2"/>
+            <path d="M30 40l6 6 14-14" stroke="#ec4899" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="40" cy="55" r="3" fill="#ec4899"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c9_h3}}</h3>
+          <p>{{@c9_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c3_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@level_beginner}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag recommend">{{@tag_recommend}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_15800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 10. AI智能运维 -->
+      <div class="course-card">
+        <div class="course-card-icon aiops">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="18" fill="rgba(168,85,247,0.15)" stroke="#a855f7" stroke-width="2"/>
+            <path d="M40 20v4M40 56v4M20 40h4M56 40h4M26 26l3 3M51 51l3 3M54 26l-3 3M29 51l-3 3" stroke="#a855f7" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="40" cy="40" r="8" fill="none" stroke="#a855f7" stroke-width="2"/>
+            <circle cx="40" cy="40" r="3" fill="#a855f7"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c10_h3}}</h3>
+          <p>{{@c10_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c2_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@c1_level}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag salary">{{@tag_salary}}</span>
+            <span class="course-tag new">{{@tag_new}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_18800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 11. {{@c11_h3}} -->
+      <div class="course-card">
+        <div class="course-card-icon design">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="20" width="50" height="40" rx="4" fill="rgba(250,204,21,0.15)" stroke="#facc15" stroke-width="2"/>
+            <circle cx="32" cy="36" r="6" fill="#facc15"/>
+            <path d="M20 50l12-10 10 8 8-6 10 10" stroke="#facc15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c11_h3}}</h3>
+          <p>{{@c11_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c11_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@level_beginner}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag hot">{{@tag_hot}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_12800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+      <!-- 12. {{@c12_h3}} -->
+      <div class="course-card">
+        <div class="course-card-icon harmony">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="22" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="2"/>
+            <path d="M28 28v24M28 40h24M52 28v24" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="course-card-body">
+          <h3>{{@c12_h3}}</h3>
+          <p>{{@c12_p}}</p>
+          <div class="course-card-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              {{@c3_dur}}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{@level_beginner}}
+            </span>
+          </div>
+          <div class="course-card-tags">
+            <span class="course-tag new">{{@tag_new}}</span>
+            <span class="course-tag recommend">{{@tag_recommend}}</span>
+          </div>
+        </div>
+        <div class="course-card-footer">
+          <span class="price">{{@price_15800}}</span>
+          <span class="duration">{{@fulltime}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <h1>{{@banner_no_course_h1}}</h1>
+  <p>{{@banner_no_course_p}}</p>
+  <div class="hero-btns">
+    <a href="/contact" class="btn btn-white btn-lg">{{@nav.contact}}</a>
+    <a href="/faq" class="btn btn-outline-white btn-lg">{{@nav.faq}}</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <h4>{{@footer_intro}}</h4>
+      <p>{{@site_intro}}</p>
+    </div>
+    <div>
+      <h4>{{@footer_quick}}</h4>
+      <p><a href="/">{{@nav.home}}</a><br><a href="/courses">{{@nav.courses}}</a><br><a href="/pricing">{{@nav.pricing}}</a><br><a href="/classes">{{@nav.classes}}</a><br><a href="/tutorials">{{@nav.tutorials}}</a><br><a href="/about">{{@nav.about}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_more}}</h4>
+      <p><a href="/community">{{@nav.community}}</a><br><a href="/news">{{@nav.news}}</a><br><a href="/contact">{{@nav.contact}}</a><br><a href="/faq">{{@nav.faq}}</a><br><a href="/apply">{{@nav.apply}}</a><br><a href="/student/login">{{@nav.student_login}}</a><br><a href="/staff/login">{{@nav.staff_login}}</a></p>
+    </div>
+    <div>
+      <h4>{{@footer_contact}}</h4>
+      <p>{{@footer_contact_info}}</p>
+    </div>
+  </div>
+  <div class="footer-bottom">{{@footer_bottom}}</div>
+</footer>
+
+</body>
+</html>
